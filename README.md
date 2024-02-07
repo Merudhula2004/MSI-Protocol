@@ -5,7 +5,7 @@
 Modified (M), Shared (S), and Invalid (I)
 - Each cache line is associated with one of these states, and transitions between states occur based on the operations performed by processors on the shared memory.
 
-# Key states:
+## Key states:
 1. **Modified (M):**
 - The cache line is valid, and the processor has modified its copy.
 - If another processor wants to read or write to this cache line, the owning processor must either supply the data or write it back to memory.
@@ -18,7 +18,7 @@ Modified (M), Shared (S), and Invalid (I)
 - The cache line is invalid or has no meaningful data.
 - If a processor wants to read or write to this cache line, it must acquire a valid copy from another cache.
 
-# State Transition Rules:
+## State Transition Rules:
 
 1. **Modified to Invalid:**
 - Occurs when another processor in the system modifies the data in its cache, making the current cache's Modified copy obsolete.
